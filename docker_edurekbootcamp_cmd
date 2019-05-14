@@ -1,0 +1,97 @@
+1  sudo apt-get update && apt-get upgrade
+    2  sudo apt-get update
+    3  sudo apt-get install docker-ce docker-ce-cli containerd.io
+    4  sudo apt-get install     apt-transport-https     ca-certificates     curl     gnupg-agent     software-properties-common
+    5  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+    6  sudo apt-key fingerprint
+    7  sudo apt-get update
+    8  sudo apt-get install docker-ce docker-ce-cli containerd.io
+    9  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+   10  sudo apt-get update
+   11  apt-cache policy docker-ce
+   12  sudo apt-get install -y docker-ce
+   13  sudo systemctl status docker
+   14  docker ps
+   15  docker a
+   16  docker
+   17  cls
+   18  clear
+   19  docker ls
+   20  docker ps
+   21  docker help
+   22  docker images
+   23  docker pull nginx
+   24  docker images
+   25  docker ps
+   26  docker run -itd nginx
+   27  docker ps
+   28  docker ps -a
+   29  docker stop f804
+   30  docker ps 
+   31  docker ps -a
+      40  docker ps
+   41  docker images
+   42  docker rmi nginx
+   43  docker images
+   44  docker ps -a
+   45  docker run -itd tomcat
+   46  docker ps
+   47  clear
+   48  docker ps
+   49  docker run -it nginx
+   50  docker ps -a
+   51  docker start nginx
+   52  docker rm 91c4
+   53  docker ps -a
+   54  docker run  -itd --name tcs_container nginx
+   55  docker ps -a
+   56  docker stop tcs_container
+   57  docker rm tcs_container
+   58  docker ps -a
+   59  docker run -itd --name tcs_container -p 80:80 nginx
+   60  docker ps -a
+      67  docker ps -a
+   68  history
+   69  docker stop tcs_container
+   70  docker run -itd --name tcs_container -p 80:80 nginx
+   71  docker run -itd --name tcs_container1 -p 80:80 nginx
+   72  docker stop tcs_container1
+   73  docker run -itd --name tcs_container -p 80:8080 tomcat
+   74  docker run -itd --name tcs_container2 -p 80:8080 tomcat
+   75  docker ps -a
+   76  docker rm tcs_container1
+   77  docker rm tcs_container
+   78  docker ps -a
+   79  history
+   80  clear
+   81  docker ps -a
+   82  docker rm da75 76ba
+   83  docker stop 
+   84  docker stop da75 76ba
+   85  docker rm da75 76ba
+   86  docker ps -a
+   87  docker run -itd --name tcs_container -p 80:8080 jenkins
+   88  docker ps -a
+   89  docker jenkins status
+   90  docker status jenkins
+   91  docker ps
+   92  docker exec -it tcs_container
+   93  docker exec -it tcs_container /bin/bash
+   94  cd /var/jenkins_home/secrets/initialAdminPassword
+   95  ls
+   96  lll
+   97  which ls
+   98  cd /bin
+   99  ls
+  100  cd
+  101  docker pull ubuntu
+  102  docker images
+  103  docker pull alpine
+  104  docker images
+  105  docker ps -s
+  106  docker ps -a
+  107  docker -a
+  108  history
+
+   docker exec -it tcs_container /bin/bash
+   ctrl P + ctrl Q
